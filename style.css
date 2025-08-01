@@ -1,0 +1,157 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #161b22;
+  padding: 20px 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #58a6ff;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background: #161b22;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.2);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Profile */
+.about-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #58a6ff;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.skills li {
+  background: #21262d;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #58a6ff;
+}
+
+/* Buttons */
+.btn, button {
+  background: #238636;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background: #2ea043;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #0d1117;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+}
+
+.contact-info {
+  margin-top: 20px;
+  background: #21262d;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.contact-info a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #8b949e;
+  margin-top: 40px;
+}
